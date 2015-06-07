@@ -83,7 +83,7 @@ public class MainActivity extends ActionBarActivity {
 
                 Intent send = new Intent(Intent.ACTION_SENDTO);
                 String uriText = "mailto:" + Uri.encode("ajwad605@gmail.com")+"?subject="+
-                Uri.encode("Patient Daily Data")+"&body"+Uri.encode("Date: "+date+ " Score: "+score);
+               Uri.encode("Patient Daily Data")+"&body="+Uri.encode("Date: 6/7/2015"+" Score: "+score);
                 Uri uri=Uri.parse(uriText);
                 send.setData(uri);
                 startActivity(Intent.createChooser(send,"Send mail..."));
